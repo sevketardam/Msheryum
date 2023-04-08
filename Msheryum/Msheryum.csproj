@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B27048F4-B7B5-434A-B12B-F6FDD385CAA2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Msheryum</RootNamespace>
+    <AssemblyName>Msheryum</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="girisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="girisEkrani.Designer.cs">
+      <DependentUpon>girisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kisi_ara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kisi_ara.Designer.cs">
+      <DependentUpon>kisi_ara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="sifremiunuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sifremiunuttum.Designer.cs">
+      <DependentUpon>sifremiunuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sifrenidegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sifrenidegistir.Designer.cs">
+      <DependentUpon>sifrenidegistir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sorgu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sorgu.Designer.cs">
+      <DependentUpon>sorgu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="girisEkrani.resx">
+      <DependentUpon>girisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kisi_ara.resx">
+      <DependentUpon>kisi_ara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sifremiunuttum.resx">
+      <DependentUpon>sifremiunuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sifrenidegistir.resx">
+      <DependentUpon>sifrenidegistir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sorgu.resx">
+      <DependentUpon>sorgu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\Akrobat-Thin.otf" />
+    <None Include="Resources\ogretmenhover.psd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istatistikhover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girisyap1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girisyap2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msheryum bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisiara.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisiarahover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisiara1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girisyap3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girisyaphover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girisyap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girisyap4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboardfirst1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menufirst1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboardlast.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menulast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ogrenci.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ogretmen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sinifislemleri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giriscikis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emailhover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giriscikishover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ogrencihover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sinifislemlerihover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ogretmenhover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sifremiunuttumbg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onayla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kodiste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kodistehover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onaylahover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kodisteenable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SİFREDEGİSTİR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SİFREDEGİSTİR1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SİFREDEGİSTİR2.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
